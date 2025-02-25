@@ -1,0 +1,6 @@
+/* added from class tutorial, to geet rid of white border, stylistic choice */
+*{
+    border: 0px;
+    margin: 0px;
+}
+
