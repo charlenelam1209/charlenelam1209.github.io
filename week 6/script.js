@@ -19,8 +19,9 @@ shawn.onclick = function(){
 
 var thecolour = 0;
 var mark = document.getElementById('mark');
+mark.onclick = colourChanger;
 
-function colourChange(thecolour){
+function colourChanger(){
     thecolour = (thecolour + 1) % 3;
     if(thecolour === 0){
         mark.style.background = 'tomato';
