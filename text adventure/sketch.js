@@ -1,9 +1,10 @@
+// text adventure tutorial https://editor.p5js.org/cgberry/sketches/POFi65HT1
 let input;
 let button;
-let button1;
+let button1; // added multple buttons for multiple choices
 let button2;
 let button3;
-let button4;
+let button4; // added to not clash with 'button's' functions for first half of quiz
 
 let txt = "";
 let name = "";
@@ -13,6 +14,7 @@ let ans = "";
 let popup;
 let close;
 
+// popup tutorial https://editor.p5js.org/kangabru/sketches/IRGWTRdpK
 class Popup {
   constructor() {
     this.visible = false;
@@ -76,6 +78,7 @@ function setup() {
   button3.position(410, 330);
   button3.mousePressed(ending3);
 
+  //added button so future page could run better without colliding with previous codes
   button4 = createButton("PRESS ME!");
   button4.position(360, 420);
   button4.mousePressed(choice2);
@@ -129,6 +132,7 @@ function toobad(){
   txt = "too bad then."
 }
 
+// from 2nd text adventure tutorial https://editor.p5js.org/hosken/sketches/m1j3x42xF
 function createStory() {
   txt = "which letter calls to you?"
 
@@ -173,6 +177,7 @@ function ending3(){
   button4.show();  
 }
 
+// button 4's functions
 function choice2(){
   lastending();  
 }
@@ -198,6 +203,7 @@ function mousePressed() {
   }
 }
 
+// from popup tutorial
 function alertmessage() {
   popup.show();  
 }
